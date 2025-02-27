@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy import Column, DateTime, Integer, String, Boolean
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import validates
 from sqlalchemy.sql import func
@@ -45,10 +45,13 @@ class List(Base):
     name = Column(String, nullable=False)
     email = Column(String, unique=True, nullable=False)
     confirmed = Column(Boolean, default=False)
-    referral_number = Column(String, unique=True, nullable=False)
-    country = Column(String, nullable=False)
+    subscribed = Column(Boolean, default=True)
+    referral_code = Column(String, unique=True, nullable=False)
+    country_code = Column(String(2), nullable=False)
     city = Column(String, nullable=False)
-    zip = Column(String, nullable=False)
+    state_code = Column(String(2))
+    zip = Column(String)
+    download_used = Column(Boolean, default=False)
 
     def __repr__(self):
         return f"<List(name={self.name}, email={self.email}, confirmed={self.confirmed})>"

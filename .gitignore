@@ -2,12 +2,14 @@
 __pycache__/
 # Specific directories
 /backend/__pycache__/
-backend/alembic/__pycache__/
-backend/admin/__pycache__/
-backend/db/__pycache__/
+/backend/api/__pycache__/
+/backend/alembic/__pycache__/
+/backend/alembic/versions/__pycache__/
+/backend/api/admin/__pycache__/
+/backend/db/__pycache__/
 
 # Ignore the .env file
-.backend/.env
+/backend/.env
 
 # Ignore the virtual environment
 /backend/venv/
