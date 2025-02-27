@@ -1,6 +1,13 @@
-/backend/__pycache__
-/backend/alembic/__pycache__
-/backend/admin/__pycache__
-/backend/db/__pycache__
-/backend/.env
-/backend/venv
+# Ignore all __pycache__ directories
+__pycache__/
+# Specific directories
+/backend/__pycache__/
+backend/alembic/__pycache__/
+backend/admin/__pycache__/
+backend/db/__pycache__/
+
+# Ignore the .env file
+.backend/.env
+
+# Ignore the virtual environment
+/backend/venv/
