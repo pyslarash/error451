@@ -1,0 +1,6 @@
+/backend/__pycache__
+/backend/alembic/__pycache__
+/backend/admin/__pycache__
+/backend/db/__pycache__
+/backend/.env
+/backend/venv
